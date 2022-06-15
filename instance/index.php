@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 ob_start();
 //$er = error_reporting(0);
 require_once dirname(__FILE__).'/admin/inc/unregister_globals.php';

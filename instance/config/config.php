@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . './config_wsu.php';
+require __DIR__ . '/config_wsu.php';
 
 /*
 
