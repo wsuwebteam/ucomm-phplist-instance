@@ -71,3 +71,10 @@ $bounce_unsubscribe_threshold = 5;
 // check the extended config for more info
 // in most cases, it is fine to leave this as it is
 define('HASH_ALGO', 'sha256');
+
+// define the amount of emails you want to send per period. If 0, batch processing
+// is disabled and messages are sent out as fast as possible
+define('MAILQUEUE_BATCH_SIZE', 14);
+
+// define the length of one batch processing period, in seconds (3600 is an hour)
+define('MAILQUEUE_BATCH_PERIOD', 2);
