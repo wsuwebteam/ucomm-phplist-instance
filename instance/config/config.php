@@ -78,3 +78,10 @@ define('MAILQUEUE_BATCH_SIZE', 14);
 
 // define the length of one batch processing period, in seconds (3600 is an hour)
 define('MAILQUEUE_BATCH_PERIOD', 2);
+
+// If you set up your system to send the message automatically (from commandline),
+// you can set this value to 0, so "Process Queue" will disappear from the site
+// this will also stop users from loading the page on the web frontend, so you will
+// have to make sure that you run the queue from the commandline
+// check README.commandline how to do this
+define('MANUALLY_PROCESS_QUEUE', 1);
